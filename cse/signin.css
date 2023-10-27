@@ -1,0 +1,48 @@
+.container {
+    display: grid;
+    grid-template-columns: minmax(30px, 10%) 6fr 1fr;
+    grid-template-rows: minmax(5%, auto) 10% 1fr 1fr 1fr 1fr;
+    grid-gap: 25px 30px;
+}
+
+.image {
+    grid-row: 1;
+    grid-column: 1;
+    /* width: 60px; */
+}
+
+.signup {
+    grid-row: 1;
+    grid-column: 3;
+}
+
+.title {
+    grid-row: 2;
+    grid-column: 2;
+}
+
+.email-field {
+    grid-row: 3;
+    grid-column: 2;
+}
+
+.password-field {
+    grid-row: 4;
+    grid-column: 2;
+}
+
+.remember-me {
+    grid-row: 5;
+    grid-column: 2;
+
+}
+
+.forgot-pass {
+    grid-row: 6;
+    grid-column: 2;
+}
+
+.signin {
+    grid-row: 6;
+    grid-column: 2;
+}

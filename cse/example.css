@@ -1,0 +1,48 @@
+#firstParagraph {
+    color: blue;
+    font-size: 25px;
+}
+
+p, h1 {
+    color: red;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.my-first-css-class {
+    color: green;
+    font-size: 25px;
+}
+
+* {
+    text-align: center;
+}
+
+p.my-first-css-class {
+    text-align: left;
+}
+
+div > input {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+input {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+a:link {
+    color: green;
+}
+
+a:visited {
+    color: red;
+}
+
+a:hover {
+    color: brown;
+    font-size: 20px;
+}
+
+a:active {
+    color: orange;
+}

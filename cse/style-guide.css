@@ -1,0 +1,51 @@
+body {
+    background-color: cornsilk;
+}
+
+.image-size {
+    width: 50px;
+}
+
+.input-style {
+    margin-top: 10px;
+    padding: 3px;
+    border-radius: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.button-style {
+    border: 0px;
+    border-radius: 5px;
+    padding: 4px;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.login-style {
+    background-color: firebrick;
+    color: aliceblue;
+}
+
+.help-style {
+    background-color: lightblue;
+    color: white;
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.submit-style {
+    background-color: magenta;
+    color: white;
+    font-size: 18px;
+    font-weight: 900;
+}
+
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    justify-content: flex-start;
+    align-items: center;
+}
