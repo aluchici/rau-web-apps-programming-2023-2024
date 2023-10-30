@@ -21,3 +21,53 @@ body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: green;
 }
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 7fr 1fr;
+    grid-template-rows: 60px repeat(6, 1fr);
+    column-gap: 15px;
+    row-gap: 15px;
+}
+
+.pos-logo {
+    grid-column: 1;
+    grid-row: 1;
+    width: 80px;
+    padding: 0;
+    margin: 0;
+}
+
+.pos-title {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.pos-email {
+    grid-column: 2;
+    grid-row: 3;
+    width: max(150px, 50%);
+}
+
+.pos-password {
+    grid-column: 2;
+    grid-row: 4;
+    width: max(150px, 50%);
+}
+
+.pos-remember-me {
+    grid-column: 2;
+    grid-row: 5;
+}
+
+.pos-button {
+    grid-column: 2;
+    grid-row: 6;
+    width: max(100px, 25%);
+}
+
+.pos-text {
+    grid-column: 2;
+    grid-row: 7;
+    width: 350px;
+}
