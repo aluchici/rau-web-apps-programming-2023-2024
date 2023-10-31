@@ -1,0 +1,61 @@
+.sant {
+    border-color: aqua;
+    border-style: groove;
+    border-width: 15px;
+    border-radius: 30px;
+    padding: 10px;
+    margin: 20px;
+}
+
+.signin-grid {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 100px repeat(6, 50px);
+    column-gap: 10px;
+    row-gap: 5px;
+}
+
+.pos-logo {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.pos-column-2 {
+    grid-column: 2;
+}
+
+.pos-title {
+    /* grid-column: 2; */
+    grid-row: 2;
+}
+
+.pos-email {
+    /* grid-column: 2; */
+    grid-row: 3;
+    width: max(150px, 50%);
+    height: max(25px, 50%);
+    border-radius: 5px;
+}
+
+.pos-password {
+    /* grid-column: 2; */
+    grid-row: 4;
+    width: max(150px, 50%);
+    height: max(25px, 50%);
+    border-radius: 5px;
+}
+
+.pos-remember-me {
+    /* grid-column: 2; */
+    grid-row: 5;
+}
+
+.pos-buttons {
+    /* grid-column: 2; */
+    grid-row: 6;
+}
+
+.pos-text {
+    /* grid-column: 2; */
+    grid-row: 7;
+}

@@ -5,41 +5,63 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-</head>
-<body>
-    <header>
-        <img src="assets/logo.png" alt="This is a generic logo.">
-    </header>
+    <style>
+        /* h1 {
+            border-color: aqua;
+            border-style: groove;
+            border-width: 30px;
+        } */
+        #signin {
+            /* border-color: aqua;
+            border-style: groove;
+            border-width: 2px; */
+            color: green;
+            font-size: 18px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            padding-bottom: 20px;
+            margin-bottom: 50%;
+        }
 
-    <section>
-        <h1>
+        /* .sant {
+            border-color: aqua;
+            border-style: groove;
+            border-width: 15px;
+        } */
+
+    </style>
+
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body style="background-color: antiquewhite;">
+    <div class="signin-grid">
+        <img class="pos-logo" style="width: 100px; border-radius: 40px;" src="assets/logo.png" alt="This is a generic logo.">
+        
+        <h1 class="pos-title pos-column-2" id="signin">
             Sign in
         </h1>
-    </section>
     
-    <section>
-        <input type="email" placeholder="Enter your email...">
-        <input type="password" placeholder="Enter your password...">
-    </section>
-
-    <section>
-        <input type="checkbox">
-        <span>
-            Remember me
-        </span>
-    </section>
-    
-    <div>
-        <button>
-            Forgot password
-        </button>
+        <input class="pos-email pos-column-2" type="email" placeholder="Enter your email...">
+        <input class="pos-password pos-column-2" type="password" placeholder="Enter your password...">
         
-        <button>
-            Submit
-        </button>
+        <div class="pos-remember-me pos-column-2">
+            <input type="checkbox">
+            <span>
+                Remember me
+            </span>
+        </div>
+        
+        <div class="pos-buttons pos-column-2">
+            <button style="margin-right: 30%">
+                Forgot password
+            </button>
+            <button>
+                Submit
+            </button>
+        </div>
+
+        <p class="pos-text pos-column-2">
+            If you don't have an account, please sign up <a href="signup.html">here</a>.
+        </p>
     </div>
-    <p>
-        If you don't have an account, please sign up <a href="signup.html">here</a>.
-    </p>
 </body>
 </html>
