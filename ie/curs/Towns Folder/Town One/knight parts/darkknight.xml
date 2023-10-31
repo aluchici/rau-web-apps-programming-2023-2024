@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="darkknight.png">
+	<!-- Created with Adobe Animate version 21.0.7.42652 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="knight attack0000" x="20" y="268" width="216" height="290" frameX="-116" frameY="0" frameWidth="343" frameHeight="295"/>
+	<SubTexture name="knight attack0001" x="20" y="268" width="216" height="290" frameX="-116" frameY="0" frameWidth="343" frameHeight="295"/>
+	<SubTexture name="knight attack0002" x="20" y="268" width="216" height="290" frameX="-116" frameY="0" frameWidth="343" frameHeight="295"/>
+	<SubTexture name="knight attack0003" x="380" y="20" width="342" height="226" frameX="0" frameY="-66" frameWidth="343" frameHeight="295"/>
+	<SubTexture name="knight attack0004" x="380" y="20" width="342" height="226" frameX="0" frameY="-66" frameWidth="343" frameHeight="295"/>
+	<SubTexture name="knight attack0005" x="20" y="20" width="340" height="228" frameX="-3" frameY="-64" frameWidth="343" frameHeight="295"/>
+	<SubTexture name="knight attack0006" x="20" y="20" width="340" height="228" frameX="-3" frameY="-64" frameWidth="343" frameHeight="295"/>
+	<SubTexture name="knight attack0007" x="742" y="20" width="266" height="230" frameX="-72" frameY="-65" frameWidth="343" frameHeight="295"/>
+	<SubTexture name="knight attack0008" x="742" y="20" width="266" height="230" frameX="-72" frameY="-65" frameWidth="343" frameHeight="295"/>
+	<SubTexture name="knight attack0009" x="742" y="270" width="215" height="231" frameX="-126" frameY="-62" frameWidth="343" frameHeight="295"/>
+	<SubTexture name="knight attack0010" x="742" y="270" width="215" height="231" frameX="-126" frameY="-62" frameWidth="343" frameHeight="295"/>
+	<SubTexture name="knight attack0011" x="742" y="270" width="215" height="231" frameX="-126" frameY="-62" frameWidth="343" frameHeight="295"/>
+	<SubTexture name="knight attack0012" x="742" y="270" width="215" height="231" frameX="-126" frameY="-62" frameWidth="343" frameHeight="295"/>
+	<SubTexture name="knight attack0013" x="742" y="270" width="215" height="231" frameX="-126" frameY="-62" frameWidth="343" frameHeight="295"/>
+	<SubTexture name="knight attack0014" x="742" y="270" width="215" height="231" frameX="-126" frameY="-62" frameWidth="343" frameHeight="295"/>
+	<SubTexture name="knight attack0015" x="742" y="270" width="215" height="231" frameX="-126" frameY="-62" frameWidth="343" frameHeight="295"/>
+	<SubTexture name="knight attack0016" x="742" y="270" width="215" height="231" frameX="-126" frameY="-62" frameWidth="343" frameHeight="295"/>
+	<SubTexture name="knight idle0000" x="480" y="518" width="202" height="232" frameX="-1" frameY="0" frameWidth="205" frameHeight="232"/>
+	<SubTexture name="knight idle0001" x="480" y="518" width="202" height="232" frameX="-1" frameY="0" frameWidth="205" frameHeight="232"/>
+	<SubTexture name="knight idle0002" x="480" y="518" width="202" height="232" frameX="-1" frameY="0" frameWidth="205" frameHeight="232"/>
+	<SubTexture name="knight idle0003" x="1211" y="273" width="204" height="231" frameX="0" frameY="-1" frameWidth="205" frameHeight="232"/>
+	<SubTexture name="knight idle0004" x="1211" y="273" width="204" height="231" frameX="0" frameY="-1" frameWidth="205" frameHeight="232"/>
+	<SubTexture name="knight idle0005" x="1211" y="273" width="204" height="231" frameX="0" frameY="-1" frameWidth="205" frameHeight="232"/>
+	<SubTexture name="knight idle0006" x="702" y="521" width="205" height="228" frameX="0" frameY="-4" frameWidth="205" frameHeight="232"/>
+	<SubTexture name="knight idle0007" x="702" y="521" width="205" height="228" frameX="0" frameY="-4" frameWidth="205" frameHeight="232"/>
+	<SubTexture name="knight idle0008" x="702" y="521" width="205" height="228" frameX="0" frameY="-4" frameWidth="205" frameHeight="232"/>
+	<SubTexture name="knight idle0009" x="256" y="518" width="204" height="231" frameX="0" frameY="-1" frameWidth="205" frameHeight="232"/>
+	<SubTexture name="knight idle0010" x="256" y="518" width="204" height="231" frameX="0" frameY="-1" frameWidth="205" frameHeight="232"/>
+	<SubTexture name="knight idle0011" x="256" y="518" width="204" height="231" frameX="0" frameY="-1" frameWidth="205" frameHeight="232"/>
+	<SubTexture name="knight walk0000" x="1028" y="20" width="231" height="233" frameX="0" frameY="-2" frameWidth="232" frameHeight="235"/>
+	<SubTexture name="knight walk0001" x="1028" y="20" width="231" height="233" frameX="0" frameY="-2" frameWidth="232" frameHeight="235"/>
+	<SubTexture name="knight walk0002" x="1279" y="20" width="231" height="232" frameX="0" frameY="-3" frameWidth="232" frameHeight="235"/>
+	<SubTexture name="knight walk0003" x="977" y="273" width="214" height="221" frameX="-12" frameY="-12" frameWidth="232" frameHeight="235"/>
+	<SubTexture name="knight walk0004" x="977" y="273" width="214" height="221" frameX="-12" frameY="-12" frameWidth="232" frameHeight="235"/>
+	<SubTexture name="knight walk0005" x="977" y="273" width="214" height="221" frameX="-12" frameY="-12" frameWidth="232" frameHeight="235"/>
+	<SubTexture name="knight walk0006" x="927" y="521" width="200" height="232" frameX="-30" frameY="-1" frameWidth="232" frameHeight="235"/>
+	<SubTexture name="knight walk0007" x="927" y="521" width="200" height="232" frameX="-30" frameY="-1" frameWidth="232" frameHeight="235"/>
+	<SubTexture name="knight walk0008" x="927" y="521" width="200" height="232" frameX="-30" frameY="-1" frameWidth="232" frameHeight="235"/>
+	<SubTexture name="knight walk0009" x="500" y="266" width="222" height="230" frameX="-10" frameY="-1" frameWidth="232" frameHeight="235"/>
+	<SubTexture name="knight walk0010" x="500" y="266" width="222" height="230" frameX="-10" frameY="-1" frameWidth="232" frameHeight="235"/>
+	<SubTexture name="knight walk0011" x="256" y="268" width="224" height="230" frameX="-7" frameY="-1" frameWidth="232" frameHeight="235"/>
+	<SubTexture name="knight walk0012" x="1147" y="524" width="204" height="224" frameX="-26" frameY="-10" frameWidth="232" frameHeight="235"/>
+	<SubTexture name="knight walk0013" x="1147" y="524" width="204" height="224" frameX="-26" frameY="-10" frameWidth="232" frameHeight="235"/>
+	<SubTexture name="knight walk0014" x="1147" y="524" width="204" height="224" frameX="-26" frameY="-10" frameWidth="232" frameHeight="235"/>
+	<SubTexture name="knight walk0015" x="1371" y="524" width="189" height="234" frameX="-34" frameY="0" frameWidth="232" frameHeight="235"/>
+	<SubTexture name="knight walk0016" x="1371" y="524" width="189" height="234" frameX="-34" frameY="0" frameWidth="232" frameHeight="235"/>
+	<SubTexture name="knight walk0017" x="1371" y="524" width="189" height="234" frameX="-34" frameY="0" frameWidth="232" frameHeight="235"/>
+</TextureAtlas>

@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="splatter.png">
+	<!-- Created with Adobe Animate version 21.0.7.42652 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="splatter appear0000" x="911" y="95" width="63" height="55" frameX="-107" frameY="0" frameWidth="277" frameHeight="55"/>
+	<SubTexture name="splatter appear0001" x="911" y="20" width="71" height="55" frameX="-103" frameY="0" frameWidth="277" frameHeight="55"/>
+	<SubTexture name="splatter appear0002" x="794" y="719" width="79" height="55" frameX="-99" frameY="0" frameWidth="277" frameHeight="55"/>
+	<SubTexture name="splatter appear0003" x="812" y="644" width="87" height="55" frameX="-95" frameY="0" frameWidth="277" frameHeight="55"/>
+	<SubTexture name="splatter appear0004" x="838" y="569" width="97" height="55" frameX="-90" frameY="0" frameWidth="277" frameHeight="55"/>
+	<SubTexture name="splatter appear0005" x="838" y="495" width="105" height="54" frameX="-86" frameY="0" frameWidth="277" frameHeight="55"/>
+	<SubTexture name="splatter appear0006" x="815" y="422" width="113" height="53" frameX="-82" frameY="-1" frameWidth="277" frameHeight="55"/>
+	<SubTexture name="splatter appear0007" x="651" y="709" width="123" height="53" frameX="-77" frameY="-1" frameWidth="277" frameHeight="55"/>
+	<SubTexture name="splatter appear0008" x="661" y="636" width="131" height="53" frameX="-73" frameY="-1" frameWidth="277" frameHeight="55"/>
+	<SubTexture name="splatter appear0009" x="679" y="563" width="139" height="53" frameX="-69" frameY="-1" frameWidth="277" frameHeight="55"/>
+	<SubTexture name="splatter appear0010" x="484" y="705" width="147" height="53" frameX="-65" frameY="-1" frameWidth="277" frameHeight="55"/>
+	<SubTexture name="splatter appear0011" x="484" y="634" width="157" height="51" frameX="-60" frameY="-2" frameWidth="277" frameHeight="55"/>
+	<SubTexture name="splatter appear0012" x="494" y="563" width="165" height="51" frameX="-56" frameY="-2" frameWidth="277" frameHeight="55"/>
+	<SubTexture name="splatter appear0013" x="580" y="492" width="173" height="51" frameX="-52" frameY="-2" frameWidth="277" frameHeight="55"/>
+	<SubTexture name="splatter appear0014" x="291" y="556" width="183" height="51" frameX="-47" frameY="-2" frameWidth="277" frameHeight="55"/>
+	<SubTexture name="splatter appear0015" x="604" y="422" width="191" height="50" frameX="-43" frameY="-2" frameWidth="277" frameHeight="55"/>
+	<SubTexture name="splatter appear0016" x="265" y="692" width="199" height="49" frameX="-39" frameY="-3" frameWidth="277" frameHeight="55"/>
+	<SubTexture name="splatter appear0017" x="257" y="761" width="207" height="49" frameX="-35" frameY="-3" frameWidth="277" frameHeight="55"/>
+	<SubTexture name="splatter appear0018" x="20" y="761" width="217" height="49" frameX="-30" frameY="-3" frameWidth="277" frameHeight="55"/>
+	<SubTexture name="splatter appear0019" x="20" y="692" width="225" height="49" frameX="-26" frameY="-3" frameWidth="277" frameHeight="55"/>
+	<SubTexture name="splatter appear0020" x="20" y="623" width="233" height="49" frameX="-22" frameY="-3" frameWidth="277" frameHeight="55"/>
+	<SubTexture name="splatter appear0021" x="317" y="489" width="243" height="47" frameX="-17" frameY="-4" frameWidth="277" frameHeight="55"/>
+	<SubTexture name="splatter appear0022" x="20" y="556" width="251" height="47" frameX="-13" frameY="-4" frameWidth="277" frameHeight="55"/>
+	<SubTexture name="splatter appear0023" x="614" y="355" width="259" height="47" frameX="-9" frameY="-4" frameWidth="277" frameHeight="55"/>
+	<SubTexture name="splatter appear0024" x="317" y="422" width="267" height="47" frameX="-5" frameY="-4" frameWidth="277" frameHeight="55"/>
+	<SubTexture name="splatter appear0025" x="20" y="20" width="277" height="47" frameX="0" frameY="-4" frameWidth="277" frameHeight="55"/>
+	<SubTexture name="splatter bye0000" x="20" y="20" width="277" height="47" frameX="0" frameY="0" frameWidth="277" frameHeight="55"/>
+	<SubTexture name="splatter bye0001" x="20" y="87" width="277" height="47"/>
+	<SubTexture name="splatter bye0002" x="317" y="20" width="277" height="47"/>
+	<SubTexture name="splatter bye0003" x="20" y="154" width="277" height="47"/>
+	<SubTexture name="splatter bye0004" x="317" y="87" width="277" height="47"/>
+	<SubTexture name="splatter bye0005" x="614" y="20" width="277" height="47"/>
+	<SubTexture name="splatter bye0006" x="20" y="221" width="277" height="47"/>
+	<SubTexture name="splatter bye0007" x="317" y="154" width="277" height="47"/>
+	<SubTexture name="splatter bye0008" x="614" y="87" width="277" height="47"/>
+	<SubTexture name="splatter bye0009" x="20" y="288" width="277" height="47"/>
+	<SubTexture name="splatter bye0010" x="317" y="221" width="277" height="47"/>
+	<SubTexture name="splatter bye0011" x="614" y="154" width="277" height="47"/>
+	<SubTexture name="splatter bye0012" x="20" y="355" width="277" height="47"/>
+	<SubTexture name="splatter bye0013" x="317" y="288" width="277" height="47"/>
+	<SubTexture name="splatter bye0014" x="614" y="221" width="277" height="47"/>
+	<SubTexture name="splatter bye0015" x="20" y="422" width="277" height="47"/>
+	<SubTexture name="splatter bye0016" x="317" y="355" width="277" height="47"/>
+	<SubTexture name="splatter bye0017" x="614" y="288" width="277" height="47"/>
+	<SubTexture name="splatter bye0018" x="20" y="489" width="277" height="47"/>
+	<SubTexture name="splatter chill0000" x="20" y="20" width="277" height="47" frameX="0" frameY="0" frameWidth="277" frameHeight="55"/>
+</TextureAtlas>
