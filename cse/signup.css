@@ -15,6 +15,11 @@
     grid-column: 2;
 }
 
+.title-font {
+    font-size: 20px;
+    letter-spacing: 1;
+}
+
 .image {
     grid-row-start: 1;
     grid-column-start: 1;

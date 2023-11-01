@@ -3,24 +3,16 @@
     <head>
         <link href="signup.css" rel="stylesheet">
         <link href="style-guide.css" rel="stylesheet">
-
-        <script>
-            console.log("This is the second example.")
-        </script>
     </head>
     
     <body>
-        <script>
-            console.log("This is an example.")
-        </script>
-
         <div class="grid-container">
             <img class="image image-size" src="logo.png">
             
             <button class="login-button button-style login-style">Login</button>
                 
             <div class="title">
-                <h1>Create an account</h1>
+                <h1 id="title">Create an account</h1>
             </div>
 
             <div class="input-form">
@@ -42,23 +34,20 @@
             </div>
 
             <div class="toc">
-                <input type="checkbox">
+                <input id="checkbox" type="checkbox">
                 <span>Click if you agree with our <a href="">T&C</a></span>
             </div>
 
-            <div  class="buttons flex">
-                <button class="button-style help-style">
+            <div name="placeOfInterest" class="buttons flex">
+                <button class="button-style help-style" onclick="addSearchButton()">
                     Help 
                 </button>
 
-                <button class="button-style submit-style" style="margin-left: auto;">
+                <button class="button-style submit-style" style="margin-left: auto;" onclick="submit()">
                     Submit
                 </button>
             </div>
     </div>    
     <script src="signup.js"></script>
-    <script>
-        console.log("This is the third example.")
-    </script>
     </body>
 </html>
