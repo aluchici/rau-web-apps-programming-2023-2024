@@ -15,10 +15,19 @@ border-style: solid;
 padding: 10px;
 }  */
 
-body {
-    background-color: bisque;
-}
 
 .h1-style {
     color:magenta; 
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+}
+
+@media only screen and (min-width: 601px) {
+    body {
+        background-color: bisque;
+    }
 }

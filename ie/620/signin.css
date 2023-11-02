@@ -62,3 +62,7 @@ color:green;
 .push-right {
     margin-right: 70%;
 }
+
+.input {
+    width: max(200px, 50%);
+}
