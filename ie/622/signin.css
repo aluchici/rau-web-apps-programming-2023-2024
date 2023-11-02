@@ -1,0 +1,50 @@
+.container {
+    display: grid;
+    grid-template-columns: 4fr 3fr 4fr;
+    grid-template-rows: 10% 100px 50px repeat(3, 30px) 50px;
+    row-gap: 10px;
+    justify-items: center;
+    align-items: center;
+}
+
+.pos-column-2 {
+    grid-column: 2;
+}
+
+.pos-logo {
+    grid-row: 2;
+}
+
+.pos-title {
+    grid-row: 3;
+}
+
+.pos-email {
+    grid-row: 4;
+}
+
+.pos-password {
+    grid-row: 5;
+}
+
+.pos-buttons {
+    grid-row: 6;
+}
+
+.pos-text {
+    grid-row: 7;
+}
+
+.image {
+    width: max(150px, 50%);
+    border-radius: 50px;
+}
+
+.round-corners {
+    border-radius: 20px;
+}
+
+.spacer {
+    padding-left: 10px;
+    padding-right: 10px;
+}

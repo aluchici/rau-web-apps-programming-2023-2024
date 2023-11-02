@@ -1,0 +1,49 @@
+.title {
+    background-color: whitesmoke; 
+    padding: 3px; 
+    border: 2px solid blueviolet; 
+    border-radius: 30px; 
+    margin: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+}
+
+@media only screen and (min-width: 601px) {
+    body {
+        background-color: antiquewhite;
+    }
+}
+
+div > p {
+    font-weight: 900;
+}
+
+.para {
+    color: blue;
+}
+
+p.para {
+    color: red;
+}
+
+a:hover {
+    font-size: 25px;
+}
+
+/* div > input:nth-child(2),
+div > input:nth-child(3) {
+    background-color: red;
+} */
+
+/* p::first-letter {
+    font-size: 50px;
+} */
+
+.class-name-1,
+.class-name-2 {
+    margin-top: 50px;
+}

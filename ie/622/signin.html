@@ -1,0 +1,71 @@
+<!-- <numele_elementului atribut1="valoare" atribut2="valoare">
+    Continutul afisat de browser.
+</numele_elementului> -->
+<!DOCTYPE html>
+<html>
+    <head>  
+        <script>
+            function openHomePage() {
+                alert("I will open home page! Are you sure?")
+            }
+
+            function doubleClick() {
+                alert("Ai dat dublu click. Everything ok?")
+            }
+        </script>
+        <style>
+            /* div {
+                background-color: whitesmoke; 
+                padding: 3px; 
+                border: 2px solid blueviolet; 
+                border-radius: 30px; 
+                margin: 30px;
+            } */
+
+            /* .title {
+                background-color: whitesmoke; 
+                padding: 3px; 
+                border: 2px solid blueviolet; 
+                border-radius: 30px; 
+                margin: 30px;
+            }
+
+            body {
+                background-color: yellow;
+            } */
+        </style>
+        <link rel="stylesheet" href="style-guide.css">
+        <link rel="stylesheet" href="signin.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <!-- Logo -->
+            <img class="pos-logo pos-column-2 image" src="logo.png" alt="Acesta este logo-ul nostru.">
+            
+            <!-- Title -->
+            <h1 class="title pos-title pos-column-2 spacer">
+                Sign in
+            </h1>
+
+            <!-- Inputs -->
+            <input class="pos-email pos-column-2 round-corners spacer" type="email" placeholder="Please enter your email">
+            <input class="pos-password pos-column-2 round-corners spacer" type="password" placeholder="Please enter your password">
+
+            <!-- Buttons -->
+            <div class="pos-buttons pos-column-2">
+                <button class="round-corners spacer" ondblclick="doubleClick()">
+                    Forgot password
+                </button>
+
+                <button class="round-corners spacer" onclick="openHomePage()">
+                    Submit
+                </button>
+            </div>
+
+            <!-- Signup  -->
+            <p class="para pos-text pos-column-2">If you don't have an account, you can create one <a href="signup.html">here</a></p>
+            
+        </div>
+    </body>
+</html>
