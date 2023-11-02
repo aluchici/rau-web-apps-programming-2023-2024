@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        .login-container {
+            border: 1px solid black;
+            padding: 20px;
+            width: 300px;
+            background-color: #fff;
+        }
+        .login-field {
+            margin: 10px 0;
+            display: block;
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+        }
+        .login-button {
+            margin: 10px 0;
+            display: inline-block;
+            padding: 8px 12px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        .forgot-pass {
+            display: inline-block;
+            margin-right: 10px;
+            text-decoration: none;
+            color: #333;
+        }
+        .signup-link {
+            display: block;
+            text-align: center;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <img src="logo.png" alt="Logo" class="login-logo">
+        <h2>Sign In</h2>
+        <input type="text" placeholder="Username/Email" class="login-field">
+        <input type="password" placeholder="Password" class="login-field">
+        <a href="#" class="forgot-pass">Forgot pass</a>
+        <button class="login-button">Submit</button>
+        <div class="signup-link">
+            If you don't have an account, <a href="#">signup here</a>
+        </div>
+    </div>
+</body>
+</html>

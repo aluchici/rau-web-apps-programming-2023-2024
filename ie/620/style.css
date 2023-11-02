@@ -1,0 +1,24 @@
+h1 {
+color: blue; 
+border-width: 5px; 
+border-color: red; 
+border-style: solid; 
+padding: 10px;
+} 
+
+/* 
+div > h1 {
+color:green; 
+border-width: 5px; 
+border-color: red; 
+border-style: solid; 
+padding: 10px;
+}  */
+
+body {
+    background-color: bisque;
+}
+
+.h1-style {
+    color:magenta; 
+}

@@ -1,0 +1,98 @@
+<!-- <numele_elementului atribut1="valoare" atribut2="valoare">
+    Continutul 
+</numele_elementului> -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <link href="style.css" rel="stylesheet">
+        <link href="signin.css" rel="stylesheet">
+        
+        <style>
+           /* h1 {
+            color: blue; 
+            border-width: 5px; 
+            border-color: red; 
+            border-style: solid; 
+            padding: 10px;
+           } 
+/* 
+           div > h1 {
+            color:green; 
+            border-width: 5px; 
+            border-color: red; 
+            border-style: solid; 
+            padding: 10px;
+           }  */
+
+           /* .h1-style {
+            color:green; 
+           }
+
+           body {
+            background-color: bisque;
+           } */ */
+        </style>
+
+    </head>
+
+    <body>
+        <div class="container">
+            <!-- Header -->
+            <img class="pos-logo logo" src="logo.jpg" alt="Logo">
+            <div class="pos-language-selection">
+                <label for="language-selector">Please select language:</label>
+                <select id="language-selector">
+                    <option value="ro">
+                        <img src="" alt="Ro Flag">
+                        <span>Romana</span>
+                    </option>
+
+                    <option value="en">
+                        <img src="" alt="En flag">
+                        <span>English</span>
+                    </option>
+                </select>
+            </div>
+            <!-- Zona sign in  -->
+            <!-- Titlu -->
+            <!-- <div style="border-width: 3px; border-color: blue; border-style: dashed; padding: 20px; margin: 15px;"> -->
+            <h1 class="pos-title pos-column-2">
+                Sign in
+            </h1>
+            <!-- </div> -->
+
+            <!-- Email -->
+            <!-- <div style="border: 1px solid magenta; margin: 15px;"> -->
+            <input class="pos-email pos-column-2" style="border: 2px dashed rgb(39, 200, 39);" type="email" placeholder="please enter your email">
+            <!-- </div> -->
+
+            <!-- Password + show pass -->
+            <div class="pos-password pos-column-2">
+                <input type="password" placeholder="please enter your pass">
+                <input type="checkbox">
+            </div>
+
+            <!-- Remember me -->
+            <div class="pos-remember-me pos-column-2">
+                <input type="checkbox">
+                <span>Remember me</span>
+            </div>
+
+            <!-- Forgot pass -->
+            <p class="pos-forgot-password pos-column-2">Click <a href="">here</a> to reset your pass.</p>
+
+            <!-- Butoane -->
+            <div class="pos-buttons pos-column-2">
+                <button class="push-right">
+                    Create account
+                </button>
+
+                <button>
+                    Sign in
+                </button>
+            </div>
+        </div>
+    </body>
+</html>

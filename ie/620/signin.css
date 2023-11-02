@@ -1,0 +1,64 @@
+.h1-style {
+color:green; 
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 2fr 5fr 2fr;
+    grid-template-rows: 100px 50px repeat(5, 35px);
+    /* justify-items: center; */
+    align-items: center;
+    column-gap: 5px;
+    row-gap: 10px;
+}
+
+.pos-logo {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.pos-language-selection {
+    grid-column: 3;
+    grid-row: 1;
+}
+
+.label {
+    margin-bottom: 70%;
+}
+
+.pos-column-2 {
+    grid-column: 2;
+}
+
+.pos-title {
+    grid-row: 2;
+}
+
+.pos-email {
+    grid-row: 3;
+}
+
+.pos-password {
+    grid-row: 4;
+}
+
+.pos-remember-me {
+    grid-row: 5;
+}
+
+.pos-forgot-password {
+    grid-row: 6;
+}
+
+.pos-buttons {
+    grid-row: 7;
+}
+
+.logo {
+    width: max(100px, 30%);
+    border-radius: 50px;
+}
+
+.push-right {
+    margin-right: 70%;
+}
