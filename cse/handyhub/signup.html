@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="styles/signup.css" rel="stylesheet">
+        <link href="styles/style-guide.css" rel="stylesheet">
+    </head>
+    
+    <body>
+        <div class="grid-container">
+            <img class="image image-size" src="assets/logo.png">
+            
+            <button class="login-button button-style login-style">Login</button>
+                
+            <div class="title">
+                <h1 id="title">Create an account</h1>
+            </div>
+
+            <div class="input-form">
+                <div>
+                    <input class="input-style" placeholder="Please type your name" type="text" style="width: 100%"> 
+                </div>
+                
+                <div>
+                    <input class="input-style" placeholder="Please type your email" type="email" style="width: 100%">
+                </div>
+                
+                <div>
+                    <input class="input-style" placeholder="Please type your password" type="password" style="width: 100%">
+                </div>
+
+                <div>
+                    <input class="input-style" placeholder="Please re-type your password" type="password" style="width: 100%">
+                </div>
+            </div>
+
+            <div class="toc">
+                <input id="checkbox" type="checkbox">
+                <span>Click if you agree with our <a href="">T&C</a></span>
+            </div>
+
+            <div name="placeOfInterest" class="buttons flex">
+                <button class="button-style help-style" onclick="addSearchButton()">
+                    Help 
+                </button>
+
+                <button class="button-style submit-style" style="margin-left: auto;" onclick="submit()">
+                    Submit
+                </button>
+            </div>
+    </div>    
+    <script src="scripts/signup.js"></script>
+    </body>
+</html>
