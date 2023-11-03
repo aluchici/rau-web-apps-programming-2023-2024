@@ -4,7 +4,7 @@
     /* grid-template-columns: 2fr 8fr 2fr; */
     /* grid-template-columns: repeat(12, 1fr); */
     grid-template-columns: minmax(30px, 10%) 6fr 1fr;
-    grid-template-rows: minmax(5%, auto) 10% 3fr 1fr 1fr;
+    grid-template-rows: minmax(5%, auto) 10% 3fr 1fr 1fr 30px;
     grid-gap: 25px 30px;
 }
 
@@ -45,4 +45,11 @@
 .buttons {
     grid-column: 2;
     grid-row: 5;
+}
+
+.error-message {
+    font-size: 20px;
+    color: red;
+    grid-column: 2;
+    grid-row: 6;
 }
