@@ -63,7 +63,7 @@ function submit() {
             const data = JSON.parse(request.response);
             localStorage.setItem("user-id", data.id);
             // window.location.href = "handyhub/home.html"; // equivalent to a click on a link
-            window.location.replace("handyhub/home.html"); // equivalent to a HTTP redirect 
+            window.location.replace("home.html"); // equivalent to a HTTP redirect 
         } 
 
         if (request.status !== 200 && request.status !== 201) {

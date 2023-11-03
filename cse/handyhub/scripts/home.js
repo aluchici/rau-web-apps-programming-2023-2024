@@ -14,6 +14,9 @@ function addErrorMessage(message) {
 }
 
 let userId = localStorage.getItem("user-id");
+if (!userId) {
+    window.location.href = "../signin.html";
+}
 userId = 1; // TODO: remove this once a valid API is used. The test API doesn't save all new users.
 
 if (userId) {
@@ -137,7 +140,6 @@ cardsInfoList = [
         "text": "Some quick example text to build on the card title and make up the bulk of the card's content.",
         "url": "#"
     },
-    
     {
         "imageUrl": "https://s38063.pcdn.co/wp-content/uploads/2021/09/Blog-SQLDatabaseSchemas-IM-JY-67189.jpg",
         "imageDesc": "Card image cap",
@@ -148,3 +150,8 @@ cardsInfoList = [
 ]
 
 initializeCardsSection(cardsInfoList);
+
+function logout() {
+    localStorage.removeItem("user-id");
+    window.location.replace("signin.html");
+}

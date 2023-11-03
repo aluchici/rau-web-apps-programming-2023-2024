@@ -1,0 +1,51 @@
+.col-md-4 {
+    padding: 1rem;
+}
+
+.card {
+    overflow: hidden;
+}
+
+.card-image {
+    display: flex; 
+    width: 24rem; 
+    height: 14rem;
+}
+
+.card-img-top {
+    object-fit: cover;
+}
+
+.btn-grad-blue {
+    background: #654ea3;
+    background: -webkit-linear-gradient(to right, #77D4FC, #99DFFD);
+    background: linear-gradient(to right, #99DFFD, #BBE9FD);
+    color:#010C80
+}
+
+.text-outline {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: darkgray;
+}
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+    scrollbar-width: auto;
+    scrollbar-color: #77D4FC #ffffff;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 16px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #ffffff;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #77D4FC;
+    border-radius: 10px;
+    border: 3px solid #ffffff;
+}
