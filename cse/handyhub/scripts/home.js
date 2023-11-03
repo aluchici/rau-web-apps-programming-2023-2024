@@ -17,7 +17,7 @@ let userId = localStorage.getItem("user-id");
 if (!userId) {
     window.location.href = "../signin.html";
 }
-userId = 1; // TODO: remove this once a valid API is used. The test API doesn't save all new users.
+userId = 12; // TODO: remove this once a valid API is used. The test API doesn't save all new users.
 
 if (userId) {
     const URL = `https://reqres.in/api/users/${userId}`;
