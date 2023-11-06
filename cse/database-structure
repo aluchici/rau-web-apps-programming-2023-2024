@@ -82,3 +82,5 @@ Ref: orders.id > orders_products.order_id
 Ref: orders.user_id - users.id 
 Ref: orders.payment_method_id - payment_methods.id
 Ref: orders_products.product_id - products.id
+
+// USE: https://dbdiagram.io/d to visualise the table structure
