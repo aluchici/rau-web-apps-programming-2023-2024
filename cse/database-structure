@@ -1,0 +1,84 @@
+
+Table users {
+  id integer (primary key)
+  first_name varchar
+  last_name varchar 
+  email varchar 
+  password varchar 
+  phone varchar 
+  delivery_address_id integer
+  billing_address_id integer
+  user_type_id integer 
+}
+
+Table addresses {
+  id integer (primary key)
+  first_line varchar
+  second_lie varchar 
+  city varchar 
+  county varchar
+  country varchar 
+  postcode varchar 
+}
+
+Ref: users.delivery_address_id - addresses.id
+Ref: users.billing_address_id - addresses.id
+
+Table user_types {
+  id integer (primary key)
+  name varchar
+  display_name varchar
+}
+
+Ref: users.user_type_id - user_types.id
+
+Table categories {
+  id integer (primary key)
+  name varchar
+  display_name varchar
+}
+
+Table products {
+  id integer (primary key)
+  name varchar
+  description varchar 
+  price float 
+  discount float 
+  quantity integer
+  category_id integer
+}
+
+Table products_images {
+  id integer (primary key)
+  product_id integer
+  url varchar
+}
+
+Ref: products.category_id - categories.id 
+Ref: products.id < products_images.product_id
+
+Table orders {
+  id integer (primary key)
+  total float 
+  vat float 
+  shipping_costs float 
+  payment_method_id int
+  user_id int  
+}
+
+Table payment_methods {
+  id integer (primary key)
+  name varchar
+  display_name varchar
+}
+
+Table orders_products {
+  id integer (primary key)
+  product_id integer 
+  order_id integer 
+}
+
+Ref: orders.id > orders_products.order_id
+Ref: orders.user_id - users.id 
+Ref: orders.payment_method_id - payment_methods.id
+Ref: orders_products.product_id - products.id
