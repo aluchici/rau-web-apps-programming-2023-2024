@@ -17,12 +17,15 @@ let userId = localStorage.getItem("user-id");
 if (!userId) {
     window.location.href = "../signin.html";
 }
-userId = 12; // TODO: remove this once a valid API is used. The test API doesn't save all new users.
 
 if (userId) {
-    const URL = `https://reqres.in/api/users/${userId}`;
+    const URL = `http://localhost:5000/api/users/${userId}`;
     const request = new XMLHttpRequest();
     request.open('GET', URL);
+
+    request.setRequestHeader("Access-Control-Allow-Credentials", "true");
+    request.setRequestHeader("Content-Type", "application/json");
+    
     request.onload = pageLoaded; 
     request.onerror = requestError;
     request.send();

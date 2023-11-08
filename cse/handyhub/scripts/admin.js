@@ -1,9 +1,13 @@
 // TODO: Check that current user is an admin 
 
-const URL = "https://reqres.in/api/users"
+const URL = "http://localhost:5000/api/users"
 
 const request = new XMLHttpRequest();
 request.open("GET", URL);
+
+request.setRequestHeader("Access-Control-Allow-Credentials", "true");
+request.setRequestHeader("Content-Type", "application/json");
+    
 request.onload = displayAllUsers;
 request.send();
 

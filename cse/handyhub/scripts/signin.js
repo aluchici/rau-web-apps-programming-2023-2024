@@ -13,6 +13,10 @@ function submit() {
 
     const request = new XMLHttpRequest();
     request.open("POST", URL);
+
+    request.setRequestHeader("Access-Control-Allow-Credentials", "true");
+    request.setRequestHeader("Content-Type", "application/json");
+    
     request.onload = signinCompleted;
     request.send(JSON.stringify(data));
 
