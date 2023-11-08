@@ -44,3 +44,7 @@ function displayAllUsers() {
         }
     }
 }
+
+function deleteUser() {
+    // TODO
+}

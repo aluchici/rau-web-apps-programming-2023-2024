@@ -1,7 +1,7 @@
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 
-from repository import connect, create_user, get_user_id, get_user_details
+from repository import *
 
 USER_TYPE_ID = 2
 DELIVERY_ADDRESS_ID = 1
@@ -24,7 +24,30 @@ def version():
 @app.route("/api/users", methods=["GET", "POST"])
 def users():
     if request.method == "GET":
-        pass 
+        # connect to the db 
+        connection = connect()
+
+        # get all users details 
+        users_details = get_all_users(connection)
+
+        # close db connection 
+        connection.close()
+
+        # build response 
+        response = {
+            "data": []
+        }
+        for user in users_details:
+            current_user = {
+                "first_name": user[0],
+                "last_name": user[1],
+                "email": user[2]
+            }
+            response["data"].append(current_user)
+
+        response = jsonify(response)
+        response.headers.add("Access-Control-Allow-Origin", "*") 
+        return response 
 
     if request.method == "POST":
         # get the request body
@@ -92,7 +115,15 @@ def user_by_id(user_id):
         pass 
 
     if request.method == "DELETE":
-        pass 
+        connection = connect()
+        delete_user(connection, user_id)
+        connection.close()
+        response = {
+            "data": "Success." 
+        } 
+        response = jsonify(response)
+        response.headers.add("Access-Control-Allow-Origin", "*")
+        return response 
 
 if __name__ == "__main__":
     app.run(debug=True)

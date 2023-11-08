@@ -40,3 +40,16 @@ def get_user_details(connection, user_id):
     database_response = cursor.execute(query)
     user_details = list(database_response)[0]
     return user_details
+
+def get_all_users(connection):
+    query = "select first_name, last_name, email from users where id != 1"
+    cursor = connection.cursor()
+    database_response = cursor.execute(query)
+    users = list(database_response)
+    return users 
+
+def delete_user(connection, user_id):
+    query = f"""delete from users where id={user_id}"""
+    cursor = connection.cursor()
+    cursor.execute(query)
+    connection.commit()
