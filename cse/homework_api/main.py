@@ -7,7 +7,7 @@ PRODUCTS_FILE = "cse/homework_api/data/products.csv"
 
 
 app = Flask("homework_api")
-CORS(app, resources={r"/api/*": {"origins": "*"}})
+CORS(app, resources=r'/api/*')
 
 
 @app.route("/api/user", methods=["GET", "POST"])
