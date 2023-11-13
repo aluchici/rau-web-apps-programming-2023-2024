@@ -146,7 +146,7 @@ def products():
                 }
                 products = pd.DataFrame.from_dict(product_data)
             
-            products.to_csv(USERS_FILE, index=False)
+            products.to_csv(PRODUCTS_FILE, index=False)
             response = {
                 "data": {
                     "product_id": len(products)
