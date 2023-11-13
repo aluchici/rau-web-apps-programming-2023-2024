@@ -58,8 +58,6 @@ function clickToSend() {
             localStorage.setItem("user-id", response.data.user_id);
             sessionStorage.setItem("user-id", response.data.user_id);
         }
-
-
     }
 
     function processErrorResponse() {

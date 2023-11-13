@@ -78,3 +78,87 @@ for (let i = 0; i < 10; i++) {
     }
     value += innerValue;
 }
+
+// if (conditie) {
+//     ...
+// } else if (alta conditie) {
+//     ...
+// } else {
+//     ...
+// }
+user_types = [1, 2, 3];
+user_type = 2;
+if (user_type == 1) {
+    console.log("User Type = ", user_type);
+} else if (user_type == 2) {
+    console.log("Nu ai voie sa accesezi aceasta pagina.");
+} else {
+    console.log("Welcome!");
+}
+
+if (!(user_type == 1 || user_type == 2)) {
+    console.log("User Type = ", user_type);
+} else {
+    console.log("Welcome!");
+}
+
+function checkIfOdd(n) {
+    if (n % 2) {
+        return true;
+    } 
+    return false;
+}
+
+// function something() {
+//     // calcul suma numerelor
+//     // produsul numerelor
+//     // factorial
+//     result = {
+//         'suma': suma,
+//         'produse': produs,
+//         'factorial': factorial
+//     };
+//     // return [suma, produs, factorial]
+//     return result; 
+// }
+
+function filter(arr, conditional) {
+    const result = []
+    for (const element of arr) {
+        const keepElement = conditional(element);
+        if (keepElement == true) {
+            result.push(element);
+        }
+    } 
+    return result;
+}
+
+const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
+result = filter(arr, checkIfOdd);
+console.log(result);
+
+function greaterThan7(n) {
+    if (n > 7) {
+        return true;
+    }
+    return false;
+}
+
+result = filter(result, greaterThan7);
+console.log(result);
+
+function context(n) {
+    r = inside();
+
+    function inside() {
+        return n > 10;
+    }
+    
+    return r;
+}
+
+console.log(context(1));
+
+const f = context;
+
+console.log(f(120));
