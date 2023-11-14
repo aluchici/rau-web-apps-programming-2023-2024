@@ -1,0 +1,91 @@
+<!-- Q1. Create a webpage that has two inputs and a button. 
+The inputs should have rounded corners. 
+One input is of type text. 
+One input is of type password. 
+The button should display "Click" and have a green background.  -->
+<!-- 
+Q2. When I click the button, a paragraph will be displayed below the button. 
+The paragraph will display the following text:
+"Button clicked n times", where n is the number of times I clicked the button. 
+
+Q3. Modify Q2 such that the number of clicks is not resetted upon refreshing the page. -->
+
+<!-- Q4. Get data from inputs. Create a new function that uses the followig API to create a user. (https://reqres.in) [https://reqres.in/api/users] -->
+
+<!-- Q5. Modify the function from Q4. to display a heading with the id. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input style="border-radius: 50px;" type="text" placeholder="Input 1">
+    <input style="border-radius: 50px;" type="password" placeholder="Input 2">
+    <button style="background-color: green;" onclick="createUser()">Click</button>
+
+    <script>
+        // Q2. + Q3.
+        let nClicks = localStorage.getItem("nClicks");
+        if (!nClicks) {
+            nClicks = 0;
+        } else {
+            nClicks = parseInt(nClicks);
+        }
+
+        function buttonPressed() {
+            nClicks = nClicks + 1;
+            // figure out if we already have the paragraph 
+            const existingParagraphs = document.getElementsByTagName("p");
+            if (existingParagraphs.length) {
+                existingParagraphs[0].innerText = `Button clicked ${nClicks} times`;
+            } else {
+                // create an element 
+                const p = document.createElement("p");
+                p.innerText = `Button clicked ${nClicks} times`;
+
+                // insert the paragraph after the button 
+                const body = document.getElementsByTagName("body")[0];
+                body.appendChild(p);
+            }
+            localStorage.setItem("nClicks", nClicks);
+        }
+
+        // Q4. 
+        function createUser() {
+            // 1. Get input values 
+            const inputs = document.getElementsByTagName("input");
+
+            // 2. Create request payload (body)
+            const payload = {
+                "name": inputs[0].value,
+                "job": inputs[0].value
+            }
+            payloadJSON = JSON.stringify(payload);
+
+            // 3. Open a request and send the payload 
+            const request = new XMLHttpRequest();
+            request.open("POST", "https://reqres.in/api/users");
+
+            request.onload = processData;
+
+            request.send(payloadJSON);
+
+            function processData() {
+                if (request.status === 200 || request.status === 201) {
+                    const response = JSON.parse(request.response);
+
+                    const h1 = document.createElement("h1");
+                    h1.innerText = response.id.toString();
+
+                    const body = document.getElementsByTagName("body")[0];
+                    body.appendChild(h1);
+                }
+            }
+        }
+    </script>
+</body>
+</html>
+

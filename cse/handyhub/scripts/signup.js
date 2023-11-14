@@ -24,7 +24,7 @@ function sampleXMLHttpRequest() {
 }
 
 function submit() {
-    const URL = "https://reqres.in/api/users";
+    const URL = "http://localhost:5000/api/users";
 
     const inputs = document.getElementsByClassName("input-style");
     const checkbox = document.getElementById("checkbox");
@@ -45,14 +45,22 @@ function submit() {
         return;
     }
 
+    let name = inputs[0].value;
+    name = name.split(" ");
+    
     data = {
+        "first_name": name[0],
+        "last_name": name[1],
         "email": inputs[1].value,
-        "password": inputs[2].value
+        "password": inputs[2].value,
+        "retyped_password": inputs[3].value
     }
 
     const request = new XMLHttpRequest();
     request.open("POST", URL);
-    
+    request.setRequestHeader("Access-Control-Allow-Credentials", "true");
+    request.setRequestHeader("Content-Type", "application/json");
+
     request.onload = processData;
     
     request.send(JSON.stringify(data));
@@ -61,7 +69,7 @@ function submit() {
         console.log("User resistered successfully!");
         if (request.status === 200 || request.status === 201) {
             const data = JSON.parse(request.response);
-            localStorage.setItem("user-id", data.id);
+            localStorage.setItem("user-id", data.data.user_id);
             // window.location.href = "handyhub/home.html"; // equivalent to a click on a link
             window.location.replace("home.html"); // equivalent to a HTTP redirect 
         } 
