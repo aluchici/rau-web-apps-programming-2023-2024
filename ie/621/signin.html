@@ -10,19 +10,20 @@
             
             <h1 class="pos-title">Sign in</h1>
             
-            <input class="pos-email" type="email">
-            <input class="pos-password" type="password">
+            <input id="email" class="pos-email" type="email">
+            <input id="password" class="pos-password" type="password">
             
             <div class="pos-remember-me">
-                <input type="checkbox">
+                <input name="checkbox" type="checkbox">
                 <span>Remember me</span>
             </div>
 
-            <button class="pos-button">
+            <button class="pos-button" onclick="submit()">
                 Submit
             </button>
 
             <p class="pos-text text-style">If you don't have an account, please create one <a href="signup.html">here</a></p>
         </div>
     </body>
+    <script src="signin.js"></script>
 </html>

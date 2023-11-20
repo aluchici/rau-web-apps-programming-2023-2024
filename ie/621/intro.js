@@ -133,10 +133,6 @@ function filter(arr, conditional) {
     return result;
 }
 
-const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
-result = filter(arr, checkIfOdd);
-console.log(result);
-
 function greaterThan7(n) {
     if (n > 7) {
         return true;
@@ -144,6 +140,10 @@ function greaterThan7(n) {
     return false;
 }
 
+
+const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
+result = filter(arr, checkIfOdd);
+console.log(result);
 result = filter(result, greaterThan7);
 console.log(result);
 
