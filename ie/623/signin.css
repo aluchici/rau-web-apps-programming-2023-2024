@@ -1,7 +1,7 @@
 .container {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
-    grid-template-rows: 1fr 1fr repeat(3, 25px) 1fr;
+    grid-template-rows: 1fr 1fr repeat(3, 25px) 1fr 1fr;
     column-gap: 15px;
     row-gap: 10px;
 }
@@ -46,4 +46,22 @@
 .pos-text {
     grid-row: 6;
     grid-column: 2;
+}
+
+.animation {
+    -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+}
+@-moz-keyframes spin { 
+    100% { -moz-transform: rotate(360deg); } 
+}
+@-webkit-keyframes spin { 
+    100% { -webkit-transform: rotate(360deg); } 
+}
+@keyframes spin { 
+    100% { 
+        -webkit-transform: rotate(360deg); 
+        transform:rotate(360deg); 
+    } 
 }

@@ -11,17 +11,17 @@
 </head>
 
 <body>
-    <div class="container">
+    <div id="container" class="container">
         <img class="pos-logo style-logo" src="assets/logo.png" alt="This is a generic logo.">
 
-        <h1 class="pos-title" style="color: green; font-size: 24px;">
+        <h1 id="title" class="pos-title" style="color: green; font-size: 24px;">
             Create an account
         </h1>
 
         <input class="pos-email input-style input-width" type="email" placeholder="Enter your email...">
         <input class="pos-password input-style input-width" type="password" placeholder="Enter your password...">
 
-        <button class="pos-button button-width">
+        <button class="pos-button button-width" ondblclick="changeInputs()" onclick="showErrorMessage()">
             Submit
         </button>
 
