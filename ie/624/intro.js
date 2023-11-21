@@ -94,3 +94,61 @@ for (const currentValue of arr1) {
 }
 console.log(arr1);
 console.log(contor);
+
+
+function product(n) {
+    let p = 1;
+    for (let i = 1; i <= n; i++) {
+        p = p * i;
+    }
+    return p;
+}
+
+const p1 = product(10);
+console.log(p1);
+
+const n = 20;
+const p2 = product(n);
+console.log(p2);
+
+function filter(arr, cond) {
+    const result = [];
+    for (const el of arr) {
+        if (cond(el)) {
+            result.push(el);
+        }
+    }
+    return result;
+}
+
+function greaterThan5(n) {
+    return n > 5;
+    // if (n > 5) {
+    //     return true;
+    // } else {
+    //     return false;
+    // }
+}
+
+function mod25(n) {
+    return n % 25 == 0
+}
+
+
+let arr = [1, 2, 3, 4, 5, 6, 7, 10, 25, 50, 75, 100, 101, 102];
+arr = filter(arr, greaterThan5);
+console.log(arr);
+arr = filter(arr, mod25);
+console.log(arr);
+
+
+function f1() {
+    function f2() {
+        console.log("f2");
+    }
+    return f2;
+}
+
+const val = f1();
+val();
+

@@ -10,7 +10,7 @@
 .signin-grid {
     display: grid;
     grid-template-columns: 1fr 4fr 1fr;
-    grid-template-rows: 100px repeat(6, 50px);
+    grid-template-rows: 100px repeat(6, 50px) 30px;
     column-gap: 10px;
     row-gap: 5px;
 }
