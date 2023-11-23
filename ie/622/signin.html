@@ -39,7 +39,7 @@
     </head>
 
     <body>
-        <div class="container">
+        <div id="main" class="container">
             <!-- Logo -->
             <img class="pos-logo pos-column-2 image" src="logo.png" alt="Acesta este logo-ul nostru.">
             
@@ -51,14 +51,14 @@
             <!-- Inputs -->
             <input class="pos-email pos-column-2 round-corners spacer" type="email" placeholder="Please enter your email">
             <input class="pos-password pos-column-2 round-corners spacer" type="password" placeholder="Please enter your password">
-
+            
             <!-- Buttons -->
             <div class="pos-buttons pos-column-2">
                 <button class="round-corners spacer" ondblclick="doubleClick()">
                     Forgot password
                 </button>
 
-                <button class="round-corners spacer" onclick="openHomePage()">
+                <button class="round-corners spacer" onclick="submit()">
                     Submit
                 </button>
             </div>
@@ -68,4 +68,5 @@
             
         </div>
     </body>
+    <script src="signin.js"></script>
 </html>

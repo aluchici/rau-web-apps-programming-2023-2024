@@ -1,7 +1,7 @@
 .container {
     display: grid;
     grid-template-columns: 4fr 3fr 4fr;
-    grid-template-rows: 10% 100px 50px repeat(3, 30px) 50px;
+    grid-template-rows: 10% 100px 50px repeat(3, 30px) 50px 30px;
     row-gap: 10px;
     justify-items: center;
     align-items: center;

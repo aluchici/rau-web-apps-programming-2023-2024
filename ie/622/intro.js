@@ -57,7 +57,7 @@ o1["date start"] = 10;
 //     ...
 // } while (conditie)
 
-// Find unique elements in an array (eliminate duplicates).
+// Filter unique values.
 // 1. initializez array-ul cu elemente. a = [1, 1, 2, 3, 3, 2, 1, 1]
 // 2. initializez o variabila sa tin minte elementele unice, uniques = []
 // 3. pentru fiecare element din array (a), e1
@@ -70,3 +70,32 @@ o1["date start"] = 10;
 
 // 3.2. daca nu exista, il adaugam in uniques
 // 3.3. daca exista, merge mai deparete 
+const arr = [
+    {name: "a"}, 
+    {name: "a"}, 
+    {name: "b"}
+];
+
+function isEqual(o1, o2) {
+    if (o1.name == o2.name) {
+        return true;
+    } 
+    return false;
+}
+
+const uniques = [];
+for (const e of arr) {
+    let ok = false;
+    for (const u of uniques) {
+        if (isEqual(u, e)) {
+            ok = true;
+            break;
+        }
+    }
+
+    if (ok == false) {
+        uniques.push(e);
+    }
+}
+console.log(arr);
+console.log(uniques);
