@@ -15,7 +15,7 @@ function submit() {
 
     changeInputIfEmpty(inputs[0], "Please insert your email...");
     changeInputIfEmpty(inputs[1], "Please insert your password...");
-
+    
     // Printeaza in consola datele 
     if (inputs[0].value != "" && inputs[1].value != "") {
         const inputData = {
