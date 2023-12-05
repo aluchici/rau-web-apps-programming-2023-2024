@@ -105,7 +105,21 @@ function drawPlayer() {
     }
 
     drawCircle(xPlayer, yPlayer, rPlayer, false);
+    // drawPlayerAsset(xPlayer, yPlayer);
 }
+
+// const img = new Image();    
+// function drawPlayerAsset(x, y) {
+//     const ctx = document.getElementById("main").getContext("2d");
+//     img.onload = () => {
+//         ctx.drawImage(img, x, y, 50, 50);
+//         ctx.stroke();
+//     };
+//     img.src = "ie/623/assets/owl.png";
+    
+// }
+
+// drawPlayerAsset(xPlayer, yPlayer);
 
 let xEnemy = 100;
 let yEnemy = 150;
