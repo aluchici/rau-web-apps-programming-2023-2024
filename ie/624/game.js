@@ -72,7 +72,7 @@ function drawRect(x, y, w, h) {
 let xPlayer = 50;
 let yPlayer = 50;
 let rPlayer = 25;
-let playerStep = 5;
+let playerStep = 1;
 
 function drawPlayer() {
     // ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -121,7 +121,12 @@ let yEnemy = 250;
 let enemyWidth = 100;
 let enemyHeight = 100;
 function drawEnemy() {
-    drawRect(xEnemy, yEnemy, enemyWidth, enemyHeight);
+    gradient = ctx.createLinearGradient(xEnemy, 0, xEnemy+enemyWidth, 0);
+    gradient.addColorStop(0, "rgba(0, 0, 0, 0)");
+    gradient.addColorStop(1, "rgba(255, 255, 255, 1)");
+    ctx.fillStyle = gradient;
+    ctx.fillRect(xEnemy, yEnemy, enemyWidth, enemyHeight);
+    drawRect(xEnemy+10, yEnemy, enemyWidth-10, enemyHeight)
 }
 
 let enemyDied = false;
@@ -157,8 +162,8 @@ function animate() {
     }
     if (enemyDied === false) {
         drawEnemy();
-        xEnemy += Math.random() * 5 - 4;
-        yEnemy += Math.random() * 5 - 4;
+        xEnemy += Math.cos(Math.random() * 3 - 4);
+        yEnemy += Math.sin(Math.random() * 3 - 4);
     } else {
         xEnemy = -1;
         yEnemy = -1;
