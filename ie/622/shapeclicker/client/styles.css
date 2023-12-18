@@ -1,0 +1,159 @@
+.container {
+    display: grid;
+    grid-template-columns: 0.2fr 1fr 0.2fr;
+    grid-template-rows: 100px repeat(1fr, 5) 50px 50px;
+    grid-gap: 10px 10px;
+}
+
+.dashboard-container {
+    display: grid;
+    grid-template-columns: 0.2fr 0.5fr 0.2fr 1fr 0.2fr;
+    grid-template-rows: 100px repeat(1fr, 5) 50px 50px;
+    grid-gap: 10px 10px;
+}
+
+.main-container {
+    display: grid;
+    grid-template-columns: 0.2fr 0.5fr 3fr 0.5fr 0.2fr;
+    grid-template-rows: 100px 50px 1fr 100px;
+    grid-gap: 10px 10px;
+}
+
+.logo {
+    grid-column: 1;
+    grid-row: 1;
+    border-radius: 50px;
+    width: 75px;
+}
+
+.heading {
+    grid-column: 2;
+    grid-row: 2;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.signup-email {
+    grid-column: 2;
+    grid-row: 3;
+    width: 50%;
+}
+
+.signup-password {
+    grid-column: 2;
+    grid-row: 4;
+    width: 50%;
+}
+
+.signup-retype-password {
+    grid-column: 2;
+    grid-row: 5;
+    width: 50%;
+}
+
+.signup-button {
+    grid-column: 2;
+    grid-row: 6;
+    width: 15%;
+    position: relative;
+    left: 35%;
+}
+
+.signup-message {
+    grid-column: 2;
+    grid-row: 7;
+    width: 75%;
+}
+
+.error-message {
+    grid-column: 2;
+    grid-row: 8;
+    width: 75%;
+}
+
+.signin-email {
+    grid-column: 2;
+    grid-row: 3;
+    width: 50%;
+}
+
+.signin-password {
+    grid-column: 2;
+    grid-row: 4;
+    width: 50%;
+}
+
+.signin-button {
+    grid-column: 2;
+    grid-row: 6;
+    width: 15%;
+    margin-left: 35%; 
+}
+
+.signin-message {
+    grid-column: 2;
+    grid-row:6;
+    width: 50%;
+}
+
+.high-score {
+    grid-column: 2;
+    grid-row: 3;
+    border: 2px solid #000000;
+}
+
+.total-time {
+    grid-column: 2;
+    grid-row: 5;
+    border: 2px solid #000000;
+
+}
+
+.last-five-sessions {
+    grid-column: 4;
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
+
+.score {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.time {
+    grid-column: 4;
+    grid-row: 2;
+
+}
+
+.game {
+    grid-column: 3;
+    grid-row: 3;
+}
+
+.dashboard {
+    grid-column: 3;
+    grid-row: 4;
+    width: 10%;
+    margin-right: 30%;
+    height: 50%;
+}
+
+.save {
+    grid-column: 3;
+    grid-row: 4;
+    width: 10%;
+    margin-right: 5%;
+    margin-left: 60%;
+    height: 50%;
+}
+
+.play {
+    grid-column: 3;
+    grid-row: 4;
+    width: 10%;
+    margin-left: 75%;
+    height: 50%;
+}
