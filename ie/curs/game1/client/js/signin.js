@@ -14,7 +14,7 @@ function signin() {
     const request = new XMLHttpRequest();
 
     // open a connection to my api 
-    request.open("POST", "http://localhost:5001/api/authenticate");
+    request.open("POST", "http://localhost:5001/api/v1/authenticate");
 
     // customise the request 
     request.setRequestHeader("Access-Control-Allow-Credentials", "true");

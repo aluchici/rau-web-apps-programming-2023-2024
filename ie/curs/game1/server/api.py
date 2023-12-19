@@ -117,5 +117,49 @@ def authenticate():
         response.headers.add("Access-Control-Allow-Origin", "*")
         return response, 500
 
+
+@app.route("/api/v1/high-score/<user_id>", methods=["GET"])
+def high_score(user_id):
+    try:
+        user_id = int(user_id)
+        # connect to db 
+        connection = sqlite3.connect("ie/curs/game1/data/shapeclicker.db") 
+
+        # create cursor 
+        cursor = connection.cursor()
+
+        # define SQL query
+        query = f"""select score from sessions where user_id={user_id}"""
+
+        # run query 
+        scores = list(cursor.execute(query))
+
+        # close connection
+        connection.close()
+
+        # process scores to get highest value
+        high_score = -1000000
+        for element in scores:
+            if high_score < element[0]:
+                high_score = element[0]
+
+        # create a response and return it 
+        response = {
+            "data": {
+                "highscore": high_score
+            }
+        }
+        response = jsonify(response)
+        response.headers.add("Access-Control-Allow-Origin", "*")
+        return response, 200
+    except Exception as e:
+        # codul pt erori 
+        response = {
+            "message": f"Something went wrong. Cause: {e}."
+        }
+        response = jsonify(response)
+        response.headers.add("Access-Control-Allow-Origin", "*")
+        return response, 500
+
 if __name__ == "__main__":
     app.run(debug=True, port=5001)

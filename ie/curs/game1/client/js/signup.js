@@ -16,7 +16,7 @@ function submit() {
     const request = new XMLHttpRequest();
 
     // open a connection to my api 
-    request.open("POST", "http://localhost:5001/api/register");
+    request.open("POST", "http://localhost:5001/api/v1/register");
 
     // customise the request 
     request.setRequestHeader("Access-Control-Allow-Credentials", "true");
