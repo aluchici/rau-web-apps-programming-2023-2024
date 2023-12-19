@@ -3,7 +3,6 @@ function signin() {
     const inputs = document.getElementsByTagName("input");
     const email = inputs[0].value;
     const password = inputs[1].value; 
-    const retypePassword = inputs[2].value;
 
     const data = {
         "email": email,
