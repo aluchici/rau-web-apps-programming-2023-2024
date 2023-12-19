@@ -186,13 +186,61 @@ def total_time(user_id):
         response.headers.add("Access-Control-Allow-Origin", "*")
         return response, 200
     except Exception as error:
-         # codul pt erori 
+        # codul pt erori 
         response = {
             "message": f"Something went wrong. Cause: {error}."
         }
         response = jsonify(response)
         response.headers.add("Access-Control-Allow-Origin", "*")
         return response, 500
+
+@app.route("/api/v1/last-five-sessions/<user_id>", methods=["GET"])
+def last_five_sessions(user_id):
+    try:
+        user_id = int(user_id)
+        if user_id <= 0:
+            response = {
+                "message": "Invalid user id."
+            } 
+            response = jsonify(response)
+            response.headers.add("Access-Control-Allow-Origin", "*")
+            return response, 400
+        
+        connection = sqlite3.connect("ie/curs/game1/data/shapeclicker.db")
+        cursor = connection.cursor()
+
+        query = f"""select id, score from sessions where user_id={user_id}"""
+
+        data = cursor.execute(query)
+        data = list(data)
+
+        sorted_scores = []
+        if len(data) > 5:
+            for i in range(len(data)-1, len(data)-6, -1):
+                current_score = [data[i][0], data[i][1]]
+                sorted_scores.append(current_score)
+        else:
+            for i in range(len(data)-1, -1, -1):
+                current_score = [data[i][0], data[i][1]]
+                sorted_scores.append(current_score)
+
+        response = {
+            "data": {
+                "last_five_sessions": sorted_scores
+            }
+        }
+        response = jsonify(response)
+        response.headers.add("Access-Control-Allow-Origin", "*")
+        return response, 200
+    except Exception as error:
+        # codul pt erori 
+        response = {
+            "message": f"Something went wrong. Cause: {error}."
+        }
+        response = jsonify(response)
+        response.headers.add("Access-Control-Allow-Origin", "*")
+        return response
+
 
 if __name__ == "__main__":
     app.run(debug=True, port=5001)

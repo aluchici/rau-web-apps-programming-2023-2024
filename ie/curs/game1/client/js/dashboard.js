@@ -4,22 +4,45 @@ if (userId === undefined) {
     window.location.replace("signin.html");
 }
 
-// TODO: MOVE THIS TO ONLOAD
-// Select the div where the table will be placed
-var table = document.getElementsByClassName('last-five-sessions')[0];
-table.style.border = '1px solid black'; 
 
+// Get table data from BE 
+const tableDataRequest = new XMLHttpRequest()
+tableDataRequest.open("GET", `http://localhost:5001/api/v1/last-five-sessions/${userId}`);
+tableDataRequest.setRequestHeader("Access-Control-Allow-Credentials", "true");
+tableDataRequest.setRequestHeader("Content-Type", "application/json");
+tableDataRequest.onload = processTableDataSuccess;
+tableDataRequest.onerror = processTableDataError;
+tableDataRequest.send();
 
-// Loop to create 5 rows
-for (var i = 0; i < 5; i++) {
-    var row = table.insertRow(); // Insert a row
+function processTableDataSuccess() {
+    const response = JSON.parse(tableDataRequest.response);
+    
+    if (tableDataRequest.status == 200) {
+        // Select the div where the table will be placed
+        var table = document.getElementsByClassName('last-five-sessions')[0];
+        table.style.border = '1px solid black';
 
-    // Loop to create 2 cells per row
-    for (var j = 0; j < 2; j++) {
-        var cell = row.insertCell(); // Insert a cell
-        cell.innerHTML = 'Row ' + (i + 1) + ', Cell ' + (j + 1); // Optional: add some text
-        cell.style.borderBottom = '1px dashed black'; 
+        const tableData = response.data.last_five_sessions;
+    
+        for (var i = 0; i < tableData.length; i++) {
+            var row = table.insertRow(); // Insert a row
+
+            // Loop to create 2 cells per row
+            for (var j = 0; j < 2; j++) {
+                var cell = row.insertCell(); // Insert a cell
+                if (j == 0) {
+                    cell.innerHTML = `Session #: ${tableData[i][j]}`;
+                } else {
+                    cell.innerHTML = `Score: ${tableData[i][j]}`;
+                }
+                cell.style.borderBottom = '1px dashed black';
+            }
+        }
     }
+}
+
+function processTableDataError() {
+
 }
 
 
