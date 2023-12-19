@@ -35,7 +35,7 @@ function signin() {
         if (request.status == 200) {
             localStorage.setItem("user-id", response.data.user_id);
             // sessionStorage.setItem("user-id", response.data.user_id);
-            window.location.replace("../main.html")
+            window.location.replace("main.html")
         }
     }
 

@@ -64,7 +64,6 @@ def register():
         response.headers.add("Access-Control-Allow-Origin", "*")
         return response, 500
 
-
 @app.route("/api/v1/authenticate", methods=["POST"])
 def authenticate():
     body = request.json 
@@ -117,7 +116,6 @@ def authenticate():
         response.headers.add("Access-Control-Allow-Origin", "*")
         return response, 500
 
-
 @app.route("/api/v1/high-score/<user_id>", methods=["GET"])
 def high_score(user_id):
     try:
@@ -143,6 +141,9 @@ def high_score(user_id):
             if high_score < element[0]:
                 high_score = element[0]
 
+        if high_score == -1000000:
+            high_score = None
+
         # create a response and return it 
         response = {
             "data": {
@@ -156,6 +157,38 @@ def high_score(user_id):
         # codul pt erori 
         response = {
             "message": f"Something went wrong. Cause: {e}."
+        }
+        response = jsonify(response)
+        response.headers.add("Access-Control-Allow-Origin", "*")
+        return response, 500
+
+@app.route("/api/v1/total-time/<user_id>", methods=["GET"])
+def total_time(user_id):
+    try:
+        connection = sqlite3.connect("ie/curs/game1/data/shapeclicker.db")
+        cursor = connection.cursor()
+
+        query = f"""select time from sessions where user_id={user_id}"""
+
+        times = cursor.execute(query)
+        times = list(times)
+
+        total_time = 0
+        for time in times:
+            total_time = total_time + time[0]
+
+        response = {
+            "data": {
+                "total_time": total_time
+            }
+        }
+        response = jsonify(response)
+        response.headers.add("Access-Control-Allow-Origin", "*")
+        return response, 200
+    except Exception as error:
+         # codul pt erori 
+        response = {
+            "message": f"Something went wrong. Cause: {error}."
         }
         response = jsonify(response)
         response.headers.add("Access-Control-Allow-Origin", "*")

@@ -29,7 +29,7 @@ function submit() {
     request.onerror = processErrorResponse; 
 
     // send the data 
-    request.send(JSON.stringify(data));
+    request.send(jsonData);
 
     function processRequestToSendDataResponse() {
         const response = JSON.parse(request.response);
@@ -37,7 +37,7 @@ function submit() {
         if (request.status == 200) {
             localStorage.setItem("user-id", response.data.user_id);
             // sessionStorage.setItem("user-id", response.data.user_id);
-            window.location.replace("../main.html")
+            window.location.replace("main.html");
         }
     }
 
