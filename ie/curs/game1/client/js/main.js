@@ -58,3 +58,57 @@ function save() {
 
 
 }
+
+function play() {
+    const playButton = document.getElementById("play");
+    if (playButton.innerText === "Pause") {
+        playButton.innerText = "Play";
+        return;
+    }
+
+    // Create request body 
+    const userId = localStorage.getItem("user-id");
+    const data = {
+        "user_id": userId
+    };
+    const dataJSON = JSON.stringify(data);
+
+    // Create BE endpoint
+    const URL = "http://localhost:5001/api/v1/play";
+
+    // Create a request
+    const request = new XMLHttpRequest();
+
+    // Open request (connection to BE)
+    request.open("POST", URL);
+
+    // Customise the request 
+    request.setRequestHeader("Access-Control-Allow-Credentials", "true");
+    request.setRequestHeader("Content-Type", "application/json");
+    
+    // Specify what happens when you get a response 
+    request.onload = processPlaySuccess;
+    request.onerror = processPlayError;
+
+    // Send data
+    request.send(dataJSON);
+
+    function processPlaySuccess() {
+        const response = JSON.parse(request.response);
+
+        if (request.status == 200) {
+            localStorage.setItem("session-id", response.data.session_id);
+            alert("New session created!");
+
+            playButton.innerText = "Pause";
+        }
+    }
+
+    function processPlayError() {
+        const response = JSON.parse(request.response);
+        if (request.status == 400 || request.status == 404 || request.status == 500) {
+            alert(response.message);
+        }
+    }
+
+}

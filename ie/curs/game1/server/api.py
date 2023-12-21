@@ -334,7 +334,7 @@ def play():
 
         # Get session ID for latest session
         # create query
-        query = f"""select id from sessions where user_id={body["user_id"]}"""
+        query = f"""SELECT id FROM sessions WHERE user_id={body["user_id"]}"""
 
         # run query 
         sessions = cursor.execute(query)
