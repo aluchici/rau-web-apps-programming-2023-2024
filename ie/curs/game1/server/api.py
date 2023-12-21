@@ -239,8 +239,68 @@ def last_five_sessions(user_id):
         }
         response = jsonify(response)
         response.headers.add("Access-Control-Allow-Origin", "*")
-        return response
+        return response, 500
 
+@app.route("/api/v1/save/<session_id>", methods=["PUT"])
+def save(session_id):
+    try:
+        body = request.json 
+
+        # Check data validity
+        session_id = int(session_id)
+
+        time = body.get("time")
+        score = body.get("score")
+
+        if time is None and time < 0:
+            response = {
+                "message": f"Invalid time value: {time}."
+            }
+            response = jsonify(response)
+            response.headers.add("Access-Control-Allow-Origin", "*")
+            return response, 400
+        
+        if score is None:
+            response = {
+                "message": f"Invalid score value: {score}."
+            }
+            response = jsonify(response)
+            response.headers.add("Access-Control-Allow-Origin", "*")
+            return response, 400
+        
+        # Update session data 
+        # connect to db 
+        connection = sqlite3.connect("ie/curs/game1/data/shapeclicker.db")
+
+        # create a cursor
+        cursor = connection.cursor()
+
+        # create an update query 
+        query = f"""
+            UPDATE sessions
+            SET 
+                time={time},
+                score={score}
+            WHERE
+                id={session_id}"""
+        
+        # execute query
+        cursor.execute(query)
+        connection.commit()
+
+        # close db connection
+        connection.close()
+
+        return "", 204
+
+    except Exception as error:
+        # codul pt erori 
+        response = {
+            "message": f"Something went wrong. Cause: {error}."
+        }
+        response = jsonify(response)
+        response.headers.add("Access-Control-Allow-Origin", "*")
+        return response, 500
 
 if __name__ == "__main__":
     app.run(debug=True, port=5001)

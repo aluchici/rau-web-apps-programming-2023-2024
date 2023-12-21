@@ -11,11 +11,11 @@
     <div class="main-container">
         <img class="logo" src="assets/logo.png">
 
-        <p class="score">Score: </p>
-        <p class="time">Time: </p>
+        <p id="score" class="score">Score: </p>
+        <p id="time" class="time">Time: </p>
         <canvas id="game" class="game" width="100%" height="400px"></canvas>
         <button class="dashboard" onclick="redirectToDashboard()">Dashboard</button>
-        <button class="save">Save</button>
+        <button class="save" onclick="save()">Save</button>
         <button class="play">Play</button>
 
     </div>

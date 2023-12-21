@@ -27,7 +27,7 @@ function signin() {
     request.onerror = processErrorResponse; 
 
     // send the data 
-    request.send(JSON.stringify(data));
+    request.send(jsonData);
 
     function processRequestToSendDataResponse() {
         const response = JSON.parse(request.response);
