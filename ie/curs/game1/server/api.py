@@ -302,5 +302,65 @@ def save(session_id):
         response.headers.add("Access-Control-Allow-Origin", "*")
         return response, 500
 
+@app.route("/api/v1/play", methods=["POST"])
+def play():
+    try: 
+        body = request.json
+
+        # Validate request data
+        if body.get("user_id") is None:
+            response = {
+                "message": "User id missing."
+            } 
+            response = jsonify(response)
+            response.headers.add("Access-Control-Allow-Origin", "*")
+            return response, 400
+        
+        # Crete new session
+        # connect to db 
+        connection = sqlite3.connect("ie/curs/game1/data/shapeclicker.db")
+
+        # create cursor 
+        cursor = connection.cursor()
+
+        # create query 
+        query = f"""INSERT INTO sessions(user_id) VALUES({body["user_id"]})"""
+
+        # execute query 
+        cursor.execute(query)
+
+        # save data in db 
+        connection.commit()
+
+        # Get session ID for latest session
+        # create query
+        query = f"""select id from sessions where user_id={body["user_id"]}"""
+
+        # run query 
+        sessions = cursor.execute(query)
+        sessions = list(sessions)
+
+        # get latest session ID
+        session_id = sessions[-1]
+        session_id = session_id[0]
+
+        # Create response 
+        response = {
+            "data": {
+                "session_id": session_id
+            }
+        }
+        response = jsonify(response)
+        response.headers.add("Access-Control-Allow-Origin", "*")
+        return response, 200
+    except Exception as error:
+        # codul pt erori 
+        response = {
+            "message": f"Something went wrong. Cause: {error}."
+        }
+        response = jsonify(response)
+        response.headers.add("Access-Control-Allow-Origin", "*")
+        return response, 500
+
 if __name__ == "__main__":
     app.run(debug=True, port=5001)
