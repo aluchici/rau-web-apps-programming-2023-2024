@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="lilArm.png">
+	<!-- Created with Adobe Animate version 21.0.7.42652 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="waveStart0000" x="346" y="20" width="126" height="194" frameX="-8" frameY="-3" frameWidth="143" frameHeight="212"/>
+	<SubTexture name="waveStart0001" x="346" y="20" width="126" height="194" frameX="-8" frameY="-6" frameWidth="143" frameHeight="212"/>
+	<SubTexture name="waveStart0002" x="346" y="20" width="126" height="194" frameX="-8" frameY="-9" frameWidth="143" frameHeight="212"/>
+	<SubTexture name="waveStart0003" x="346" y="20" width="126" height="194" frameX="-8" frameY="-12" frameWidth="143" frameHeight="212"/>
+	<SubTexture name="waveStart0004" x="346" y="20" width="126" height="194" frameX="-8" frameY="-15" frameWidth="143" frameHeight="212"/>
+	<SubTexture name="waveStart0005" x="20" y="20" width="143" height="201" frameX="0" frameY="-11" frameWidth="143" frameHeight="212"/>
+	<SubTexture name="waveStart0006" x="183" y="20" width="143" height="200" frameX="0" frameY="-9" frameWidth="143" frameHeight="212"/>
+	<SubTexture name="waveStart0007" x="20" y="20" width="143" height="201" frameX="0" frameY="-6" frameWidth="143" frameHeight="212"/>
+	<SubTexture name="waveStart0008" x="183" y="20" width="143" height="200" frameX="0" frameY="-4" frameWidth="143" frameHeight="212"/>
+	<SubTexture name="waveStart0009" x="20" y="20" width="143" height="201" frameX="0" frameY="-2" frameWidth="143" frameHeight="212"/>
+	<SubTexture name="waveStart0010" x="183" y="20" width="143" height="200" frameX="0" frameY="0" frameWidth="143" frameHeight="212"/>
+	<SubTexture name="waveStart0011" x="346" y="20" width="126" height="194" frameX="-8" frameY="-3" frameWidth="143" frameHeight="212"/>
+</TextureAtlas>
