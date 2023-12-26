@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="gregPortraits.png">
+	<!-- Created with Adobe Animate version 21.0.7.42652 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="portExplain0000" x="20" y="20" width="578" height="778"/>
+	<SubTexture name="portHappy0000" x="618" y="20" width="457" height="815"/>
+	<SubTexture name="portUnpleased0000" x="1095" y="20" width="469" height="740"/>
+</TextureAtlas>

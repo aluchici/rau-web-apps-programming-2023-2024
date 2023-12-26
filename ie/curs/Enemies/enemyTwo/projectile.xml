@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="projectile.png">
+	<!-- Created with Adobe Animate version 21.0.7.42652 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="saliva0000" x="20" y="447" width="213" height="23"/>
+	<SubTexture name="saliva explosion0000" x="368" y="222" width="93" height="119" frameX="-39" frameY="-46" frameWidth="179" frameHeight="196"/>
+	<SubTexture name="saliva explosion0001" x="368" y="222" width="93" height="119" frameX="-39" frameY="-46" frameWidth="179" frameHeight="196"/>
+	<SubTexture name="saliva explosion0002" x="213" y="20" width="149" height="182" frameX="-30" frameY="-8" frameWidth="179" frameHeight="196"/>
+	<SubTexture name="saliva explosion0003" x="213" y="20" width="149" height="182" frameX="-30" frameY="-8" frameWidth="179" frameHeight="196"/>
+	<SubTexture name="saliva explosion0004" x="20" y="20" width="173" height="196" frameX="0" frameY="0" frameWidth="179" frameHeight="196"/>
+	<SubTexture name="saliva explosion0005" x="20" y="20" width="173" height="196" frameX="0" frameY="0" frameWidth="179" frameHeight="196"/>
+	<SubTexture name="saliva shoot0000" x="368" y="361" width="43" height="33" frameX="0" frameY="-46" frameWidth="521" frameHeight="162"/>
+	<SubTexture name="saliva shoot0001" x="20" y="447" width="213" height="23" frameX="-7" frameY="-55" frameWidth="213" frameHeight="23"/>
+	<SubTexture name="saliva shoot0002" x="20" y="447" width="213" height="23" frameX="-7" frameY="-55" frameWidth="213" frameHeight="23"/>
+	<SubTexture name="saliva shoot0003" x="20" y="404" width="273" height="23" frameX="-157" frameY="-57" frameWidth="521" frameHeight="162"/>
+	<SubTexture name="saliva shoot0004" x="20" y="404" width="273" height="23" frameX="-157" frameY="-57" frameWidth="521" frameHeight="162"/>
+	<SubTexture name="saliva shoot0005" x="368" y="222" width="93" height="119" frameX="-385" frameY="-7" frameWidth="179" frameHeight="196"/>
+	<SubTexture name="saliva shoot0006" x="368" y="222" width="93" height="119" frameX="-385" frameY="-7" frameWidth="179" frameHeight="196"/>
+	<SubTexture name="saliva shoot0007" x="213" y="222" width="135" height="162" frameX="-386" frameY="0" frameWidth="521" frameHeight="162"/>
+	<SubTexture name="saliva shoot0008" x="213" y="222" width="135" height="162" frameX="-386" frameY="0" frameWidth="521" frameHeight="162"/>
+	<SubTexture name="saliva shoot0009" x="20" y="236" width="129" height="143" frameX="-381" frameY="-7" frameWidth="521" frameHeight="162"/>
+	<SubTexture name="saliva shoot0010" x="20" y="236" width="129" height="143" frameX="-381" frameY="-7" frameWidth="521" frameHeight="162"/>
+	<SubTexture name="saliva shoot0011" x="20" y="20" width="0" height="0" frameX="91" frameY="-8" frameWidth="521" frameHeight="162"/>
+	<SubTexture name="saliva shoot0012" x="20" y="20" width="0" height="0" frameX="91" frameY="-8" frameWidth="521" frameHeight="162"/>
+</TextureAtlas>

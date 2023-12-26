@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="townFour.png">
+	<!-- Created with Adobe Animate version 21.0.7.42652 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="townFour0000" x="20" y="20" width="199" height="249"/>
+	<SubTexture name="townFour_selected0000" x="20" y="289" width="199" height="249"/>
+	<SubTexture name="townFour_selected0001" x="20" y="558" width="199" height="249"/>
+	<SubTexture name="townFour_selected0002" x="239" y="20" width="199" height="249"/>
+	<SubTexture name="townFour_selected0003" x="458" y="20" width="199" height="249"/>
+	<SubTexture name="townFour_selected0004" x="677" y="20" width="199" height="249"/>
+	<SubTexture name="townFour_selected0005" x="239" y="289" width="199" height="249"/>
+	<SubTexture name="townFour_selected0006" x="239" y="558" width="199" height="249"/>
+	<SubTexture name="townFour_selected0007" x="458" y="289" width="199" height="249"/>
+	<SubTexture name="townFour_selected0008" x="458" y="558" width="199" height="249"/>
+	<SubTexture name="townFour_selected0009" x="677" y="289" width="199" height="249"/>
+	<SubTexture name="townFour_selected0010" x="458" y="558" width="199" height="249"/>
+	<SubTexture name="townFour_selected0011" x="458" y="289" width="199" height="249"/>
+	<SubTexture name="townFour_selected0012" x="239" y="558" width="199" height="249"/>
+	<SubTexture name="townFour_selected0013" x="239" y="289" width="199" height="249"/>
+	<SubTexture name="townFour_selected0014" x="677" y="20" width="199" height="249"/>
+	<SubTexture name="townFour_selected0015" x="458" y="20" width="199" height="249"/>
+	<SubTexture name="townFour_selected0016" x="239" y="20" width="199" height="249"/>
+	<SubTexture name="townFour_selected0017" x="20" y="558" width="199" height="249"/>
+	<SubTexture name="townFour_selected0018" x="20" y="289" width="199" height="249"/>
+</TextureAtlas>

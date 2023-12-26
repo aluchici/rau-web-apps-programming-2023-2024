@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="pointyHand.png">
+	<!-- Created with Adobe Animate version 21.0.7.42652 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="pointyHand0000" x="20" y="20" width="82" height="107" frameX="0" frameY="0" frameWidth="82" frameHeight="122"/>
+	<SubTexture name="pointyHand0001" x="20" y="20" width="82" height="107" frameX="0" frameY="-3" frameWidth="82" frameHeight="122"/>
+	<SubTexture name="pointyHand0002" x="20" y="20" width="82" height="107" frameX="0" frameY="-6" frameWidth="82" frameHeight="122"/>
+	<SubTexture name="pointyHand0003" x="20" y="20" width="82" height="107" frameX="0" frameY="-9" frameWidth="82" frameHeight="122"/>
+	<SubTexture name="pointyHand0004" x="20" y="20" width="82" height="107" frameX="0" frameY="-12" frameWidth="82" frameHeight="122"/>
+	<SubTexture name="pointyHand0005" x="20" y="20" width="82" height="107" frameX="0" frameY="-15" frameWidth="82" frameHeight="122"/>
+	<SubTexture name="pointyHand0006" x="20" y="20" width="82" height="107" frameX="0" frameY="-12" frameWidth="82" frameHeight="122"/>
+	<SubTexture name="pointyHand0007" x="20" y="20" width="82" height="107" frameX="0" frameY="-10" frameWidth="82" frameHeight="122"/>
+	<SubTexture name="pointyHand0008" x="20" y="20" width="82" height="107" frameX="0" frameY="-7" frameWidth="82" frameHeight="122"/>
+	<SubTexture name="pointyHand0009" x="20" y="20" width="82" height="107" frameX="0" frameY="-5" frameWidth="82" frameHeight="122"/>
+	<SubTexture name="pointyHand0010" x="20" y="20" width="82" height="107" frameX="0" frameY="-2" frameWidth="82" frameHeight="122"/>
+	<SubTexture name="pointyHand0011" x="20" y="20" width="82" height="107" frameX="0" frameY="0" frameWidth="82" frameHeight="122"/>
+</TextureAtlas>
