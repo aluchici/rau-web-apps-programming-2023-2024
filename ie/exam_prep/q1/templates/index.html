@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Feedback Form</title>
+    <style>
+        label {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <!-- 1 punct pt HTML + CSS-->
+    <h2>User Feedback</h2>
+    <form id="feedbackForm">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="feedback">Feedback:</label><br>
+        <input type="text" id="feedback" name="feedback" required><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <!-- 1.5 puncte -->
+    <script>
+        document.getElementById("feedbackForm").onsubmit = async function(e) {
+            e.preventDefault();
+
+            // get data from form 
+            const formData = {
+                name: document.getElementById("name").value,
+                email: document.getElementById("email").value,
+                feedback: document.getElementById("feedback").value
+            };
+            // Pana aici + 0.5 puncte 
+
+            const response = await fetch('http://localhost:5001/submit_feedback', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(formData)
+            });
+            // + 0.5 - 0.75 puncte
+
+            const result = await response.json();
+            alert(result.message);
+        };
+    </script>
+</body>
+</html>
