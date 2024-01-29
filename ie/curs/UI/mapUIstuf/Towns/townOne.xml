@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="townOne.png">
+	<!-- Created with Adobe Animate version 21.0.7.42652 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="townOne0000" x="256" y="20" width="216" height="171"/>
+	<SubTexture name="townOne_selected0000" x="256" y="211" width="216" height="171" frameX="0" frameY="-2" frameWidth="216" frameHeight="173"/>
+	<SubTexture name="townOne_selected0001" x="256" y="402" width="216" height="171" frameX="0" frameY="-2" frameWidth="216" frameHeight="173"/>
+	<SubTexture name="townOne_selected0002" x="492" y="20" width="216" height="171" frameX="0" frameY="-2" frameWidth="216" frameHeight="173"/>
+	<SubTexture name="townOne_selected0003" x="728" y="20" width="216" height="171" frameX="0" frameY="-2" frameWidth="216" frameHeight="173"/>
+	<SubTexture name="townOne_selected0004" x="492" y="211" width="216" height="171" frameX="0" frameY="-2" frameWidth="216" frameHeight="173"/>
+	<SubTexture name="townOne_selected0005" x="492" y="402" width="216" height="171" frameX="0" frameY="-2" frameWidth="216" frameHeight="173"/>
+	<SubTexture name="townOne_selected0006" x="728" y="211" width="216" height="171" frameX="0" frameY="-2" frameWidth="216" frameHeight="173"/>
+	<SubTexture name="townOne_selected0007" x="728" y="402" width="216" height="171" frameX="0" frameY="-2" frameWidth="216" frameHeight="173"/>
+	<SubTexture name="townOne_selected0008" x="20" y="213" width="216" height="172" frameX="0" frameY="-1" frameWidth="216" frameHeight="173"/>
+	<SubTexture name="townOne_selected0009" x="20" y="20" width="216" height="173"/>
+	<SubTexture name="townOne_selected0010" x="20" y="213" width="216" height="172" frameX="0" frameY="-1" frameWidth="216" frameHeight="173"/>
+	<SubTexture name="townOne_selected0011" x="728" y="402" width="216" height="171" frameX="0" frameY="-2" frameWidth="216" frameHeight="173"/>
+	<SubTexture name="townOne_selected0012" x="728" y="211" width="216" height="171" frameX="0" frameY="-2" frameWidth="216" frameHeight="173"/>
+	<SubTexture name="townOne_selected0013" x="492" y="402" width="216" height="171" frameX="0" frameY="-2" frameWidth="216" frameHeight="173"/>
+	<SubTexture name="townOne_selected0014" x="492" y="211" width="216" height="171" frameX="0" frameY="-2" frameWidth="216" frameHeight="173"/>
+	<SubTexture name="townOne_selected0015" x="728" y="20" width="216" height="171" frameX="0" frameY="-2" frameWidth="216" frameHeight="173"/>
+	<SubTexture name="townOne_selected0016" x="492" y="20" width="216" height="171" frameX="0" frameY="-2" frameWidth="216" frameHeight="173"/>
+	<SubTexture name="townOne_selected0017" x="256" y="402" width="216" height="171" frameX="0" frameY="-2" frameWidth="216" frameHeight="173"/>
+	<SubTexture name="townOne_selected0018" x="256" y="211" width="216" height="171" frameX="0" frameY="-2" frameWidth="216" frameHeight="173"/>
+</TextureAtlas>
